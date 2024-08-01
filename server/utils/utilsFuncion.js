@@ -1,9 +1,6 @@
 import Servicio from "../models/portafolio/servicios.js";
 import Categoria from "../models/categorias.js";
-import Factura from "../models/Factura.js";
 import Anular from "../models/anular.js";
-import Pagos from "../models/pagos.js";
-import { handleGetInfoUser } from "../routes/cuadreDiario.js";
 
 // Función para agrupar objetos usando una clave de identificación
 export function mapObjectByKey(array, key) {
