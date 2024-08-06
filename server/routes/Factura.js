@@ -1307,7 +1307,7 @@ router.post("/anular-to-replace", async (req, res) => {
         estadoPrenda: orderAnulada.estadoPrenda,
       },
       newOrder,
-      ...(newPago.length > 0 && { listNewsPagos: newPago }),
+      ...(newPago && { listNewsPagos: newPago }),
       ...(newGasto && { newGasto }),
       ...(listChangeCliente.length > 0 && { listChangeCliente }),
       ...(newCodigo && { newCodigo: newCodigo.codActual }),
